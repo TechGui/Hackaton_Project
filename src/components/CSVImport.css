@@ -1,0 +1,124 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.titulo{
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'montserrat', sans-serif;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
+}
+
+.titulo {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #444444;
+  margin-bottom: 1rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+  font-family: 'montserrat', sans-serif;
+}
+
+.csv-info {
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.csv-info-title {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-family: 'montserrat', sans-serif;
+}
+
+.csv-info-list {
+  list-style-type: disc;
+  padding-left: 1rem;
+  color: #4b5563;
+  display: flex;
+  flex-direction: column;
+  font-family: 'montserrat', sans-serif;
+  gap: 0.25rem;
+}
+
+.csv-info-exemplo {
+  margin-top: 0.5rem;
+  color: #6b7280;
+  font-family: 'montserrat', sans-serif;
+}
+
+.input-file {
+  width: 100%;
+  font-size: 0.875rem;
+  color: #448AFF;
+}
+
+.input-file::file-selector-button {
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background: #eff6ff;
+  color: #448AFF;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.input-file::file-selector-button:hover {
+  background: #dbeafe;
+   color: #448AFF;
+}
+
+.text-area {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-family: monospace;
+  font-size: 0.875rem;
+}
+
+.text-area:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 2px #93c5fd;
+}
+
+.botao {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: #448AFF;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: #448AFF;
+}
+
+.botao:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,234 @@
+.ag-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.ag-header {
+  background: #2d3748;
+  color: white;
+  padding: 40px 30px 80px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.ag-logo {
+  width: 60px;
+}
+
+.ag-admin-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.ag-menu {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: -50px;
+  padding: 15px;
+}
+
+.ag-menu span {
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.ag-menu .active {
+  color: #2563eb;
+  border-color: #2563eb;
+}
+
+.ag-desc {
+  text-align: center;
+  margin-top: 15px;
+  padding: 0 20px;
+  color: #4b5563;
+  font-size: 15px;
+}
+
+.ag-filter-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.ag-chip {
+  border-radius: 30px;
+  padding: 9px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.ag-chip.blue {
+  background: #448AFF;
+  color: white;
+}
+
+.ag-chip.red {
+  background: #ef4444;
+  color: white;
+  border: none;
+}
+
+.ag-chip.yellow {
+  background: #fdc300;
+  color: #3a3a3a;
+  font-weight: 600;
+}
+
+.ag-lista {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.ag-card {
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 15px;
+  background: white;
+}
+
+.ag-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ag-nome {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.ag-info-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ag-phone {
+  font-size: 13px;
+  color: #374151;
+}
+
+.ag-status {
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+}
+
+.ag-status.urgent {
+  background: #ef4444;
+}
+
+.ag-status.normal {
+  background: #f59e0b;
+}
+
+.ag-tags {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ag-badge {
+  background: #f3f4f6;
+  color: #374151;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.ag-badge.outline {
+  border: 1px solid #d1d5db;
+  background: white;
+}
+
+.ag-abs-block {
+  margin-top: 16px;
+}
+
+.ag-abs-title {
+  font-size: 13px;
+  color: #444;
+}
+
+.ag-progress-bar-bg {
+  margin: 5px 0;
+  background: #fee2e2;
+  height: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.ag-progress-bar-fill {
+  height: 10px;
+  background: #ef4444;
+  border-radius: 6px;
+}
+
+.ag-abs-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ef4444;
+}
+.ag-status-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.ag-status-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px; /* Espaço entre os dois */
+  width: 100%;
+}
+
+/* Disponível */
+.ag-status.disponivel {
+  background: #16a34a;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  width: 110px;          /* tamanho igual */
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Excluir */
+.ag-delete-btn {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 110px;          /* mesmo tamanho do Disponível */
+  text-align: center;
+  font-size : 13px;
+  font-weight: 600;
+}
+
+.ag-delete-btn:hover {
+  background: #d9363e;
+}

@@ -1,0 +1,116 @@
+/* admin.css separado para estilização */
+
+.admin-container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.admin-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 3ch;
+  font-family: 'montserrat', sans-serif;
+}
+
+.btn-primary {
+  padding: 10px 16px;
+  background: #448AFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 9ch;
+  font-family: 'montserrat', sans-serif;
+}
+
+.tabs-container {
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 8px;
+}
+
+.tab-item {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500; /* normal */
+  background: none;
+  position: relative;
+  color: #374151;
+  transition: all 0.2s ease;
+}
+
+/* Linha de decoração ao passar o mouse */
+.tab-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+
+.tab-item:hover {
+  font-weight: 600; /* semibold ao hover */
+}
+
+.tab-item:hover::after {
+  background-color: #2563eb; /* linha azul ao hover */
+}
+
+/* Aba ativa */
+.tab-item.active {
+  font-weight: 600; /* semibold fixo */
+}
+
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: bold;
+}
+.tab-item.active::after {
+  background-color: #2563eb; /* linha azul fixa */
+}
+
+.stat-value.orange { color: #FFA525; }
+.stat-value.red { color: #FF4A4A; }
+.stat-value.blue { color: #448AFF; }

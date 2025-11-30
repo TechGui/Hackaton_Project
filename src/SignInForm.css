@@ -1,0 +1,81 @@
+/* Container principal */
+.signin-container {
+  width: 100%;
+}
+
+/* Formulário */
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* gap-form-field */
+}
+
+/* Inputs */
+.auth-input-field {
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+}
+
+/* Botão principal */
+.auth-button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #448AFF; /* blue-600 */
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.auth-button:hover:not(:disabled) {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+.auth-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Texto de alternância entre login/cadastro */
+.switch-flow-text {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280; /* text-secondary */
+}
+
+.switch-flow-button {
+  color: #2563eb; /* primary */
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.switch-flow-button:hover {
+  color: #1d4ed8; /* primary-hover */
+  text-decoration: underline;
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.75rem 0;
+}
+
+.divider-line {
+  flex-grow: 1;
+  border: none;
+  border-top: 1px solid #e5e7eb; /* gray-200 */
+}
+
+.divider-text {
+  margin: 0 1rem;
+  color: #6b7280; /* secondary */
+  font-size: 0.875rem;
+}

@@ -1,0 +1,194 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f9fafb;
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.app-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2563eb; 
+  font-family: 'montserrat', sans-serif;
+}
+
+.app-main {
+  flex: 1;
+  padding: 16px;
+}
+
+.content-wrapper {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.loading-container {
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-bottom-color: #2563eb;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.login-container {
+  max-width: 380px;
+  margin: 80px auto 0;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.login-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #444444;
+}
+
+.login-subtitle {
+  color: #4b5563;
+}
+
+.role-setup {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.role-title {
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.role-text {
+  color: #4b5563;
+  margin-bottom: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-admin {
+  padding: 12px 24px;
+  background: #448AFF;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-admin:hover {
+  background: #1d4ed8;
+}
+
+.role-note {
+  margin-top: 30px;
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-family: 'Montserrat', sans-serif;
+}
+.menu-container {
+  position: relative; 
+  width: 100%;
+}
+
+.menu-bg {
+  width: 100%; 
+  height: auto;
+  height: 230px;
+  display: flex;
+}
+
+.logo-admin {
+  position: absolute; /* coloca a logo sobre o menu */
+  top: 10px;          /* ajuste vertical */
+  height: 100%;  
+  height: 100px;     
+}
+.logo-admin:hover {
+  cursor: pointer;
+}
+.menu-container {
+  position: relative; 
+  width: 100%;       
+}
+
+.menu-container {
+  position: relative; 
+  width: 100%;
+  height: 120px; /* altura do menu */
+  background-color: #f3f4f6; /* opcional, se quiser cor de fundo */
+}
+
+/* Menu de fundo (pode ser uma imagem) */
+.menu-bg {
+  width: 100%;
+  height: 100%;
+  height: 180px;
+  display: block;
+}
+
+/* Logo centralizada no topo */
+.logo-admin {
+  position: absolute;
+  top:60%;                  /* centraliza verticalmente */
+  left: 50%;                 /* centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* ajuste perfeito */
+  height: 160px;              /* altura da logo */
+  z-index: 10;
+}
+
+/* Botão de sair no canto superior direito */
+.signout-button {
+  position: absolute;
+  top: 1rem;                /* distância do topo do container */
+  right: 1rem;              /* distância da direita */
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  background-color: white;
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  z-index: 20;
+}
+
+.signout-button:hover {
+  background-color: #f9fafb;
+  color: #4b5563;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
